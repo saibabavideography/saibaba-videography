@@ -1,260 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sai Baba Videography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
 margin:0;
-font-family:Arial,sans-serif;
-background:#000;
-color:#fff;
+background:#080808;
+color:white;
+font-family:Poppins,Arial;
+overflow-x:hidden;
 }
 
 header{
-background:#111;
 text-align:center;
-padding:80px 20px;
+padding:40px 10px;
 }
 
-header h1{
-color:gold;
-font-size:42px;
+.logo{
+font-size:45px;
+font-weight:bold;
+color:#d4af37;
+animation:logo 2s infinite alternate;
 }
 
-header p{
+@keyframes logo{
+from{transform:scale(1)}
+to{transform:scale(1.1)}
+}
+
+.tag{
 font-size:18px;
 }
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:gold;
-color:black;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
+/* camera character */
+.camera{
+font-size:80px;
+animation:move 3s infinite;
 }
 
-section{
-padding:50px 20px;
-text-align:center;
+@keyframes move{
+0%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+100%{transform:translateY(0)}
 }
 
-h2{
-color:gold;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-padding-top:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-footer{
-background:#111;
-padding:20px;
-text-align:center;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>SAI BABA VIDEOGRAPHY</h1>
-<p>Capturing Your Beautiful Moments Forever</p>
-
-<a class="btn" href="https://wa.me/919334005944">
-Book Now
-</a>
-</header>
-
-<section>
-<h2>Our Services</h2>
-<p>Wedding Photography</p>
-<p>Cinematic Wedding Films</p>
-<p>Pre-Wedding Shoots</p>
-<p>Haldi & Mehendi Coverage</p>
-<p>Reception Coverage</p>
-</section>
-
-<section>
-<h2>Contact Us</h2>
-<p>📞 9334005944</p>
-<p>📍 Barwadda, Dhanbad</p>
-</section>
-
-<footer>
-© 2026 Sai Baba Videography
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Sai Baba Videography</title>
-
-<style>
-*{
- margin:0;
- padding:0;
- box-sizing:border-box;
- font-family:Arial, sans-serif;
-}
-
-body{
- background:#0b0b0b;
- color:white;
-}
-
-/* Logo Animation */
-.logo{
- text-align:center;
- margin-top:40px;
- animation:zoom 2s infinite alternate;
-}
-
-.logo h1{
- color:#d4af37;
- font-size:45px;
- letter-spacing:3px;
-}
-
-.logo p{
- color:white;
- font-size:18px;
-}
-
-@keyframes zoom{
- from{
- transform:scale(1);
- }
- to{
- transform:scale(1.08);
- }
-}
-
-
-/* Hero */
 .hero{
- height:80vh;
- display:flex;
- justify-content:center;
- align-items:center;
- text-align:center;
- background:
- linear-gradient(#0008,#0008),
- url("your-photo.jpg");
- background-size:cover;
- background-position:center;
+height:70vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(#0008,#0008),
+url("photo.jpg");
+background-size:cover;
 }
 
-.hero h2{
- font-size:45px;
- animation:slide 2s;
+.hero h1{
+font-size:40px;
+animation:show 2s;
 }
 
-.hero span{
- color:#d4af37;
+@keyframes show{
+from{
+opacity:0;
+transform:translateY(80px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
-@keyframes slide{
- from{
- opacity:0;
- transform:translateY(50px);
- }
- to{
- opacity:1;
- transform:translateY(0);
- }
+span{
+color:#d4af37;
 }
 
 
-/* Cards */
-.services{
- padding:40px;
- text-align:center;
+.box{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
 
 .card{
- display:inline-block;
- width:250px;
- margin:15px;
- padding:25px;
- background:#161616;
- border:1px solid #d4af37;
- border-radius:15px;
- transition:.5s;
+background:#151515;
+border:1px solid #d4af37;
+margin:15px;
+padding:25px;
+border-radius:20px;
+width:230px;
+text-align:center;
+transition:.5s;
 }
 
 .card:hover{
- transform:translateY(-15px);
- box-shadow:0 0 25px #d4af37;
+transform:translateY(-15px);
+box-shadow:0 0 30px #d4af37;
+}
+
+
+button{
+background:#d4af37;
+border:0;
+padding:15px 35px;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
 }
 
 
 footer{
- text-align:center;
- padding:20px;
- color:#d4af37;
+text-align:center;
+padding:30px;
+color:#d4af37;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 
+<header>
+<div class="camera">📹</div>
+
 <div class="logo">
-<h1>SAI BABA</h1>
-<p>Wedding & Cinematic Videography</p>
+SAI BABA VIDEOGRAPHY
 </div>
+
+<p class="tag">
+Wedding | Cinematic Film | Photography
+</p>
+
+</header>
 
 
 <section class="hero">
+
 <div>
-<h2>We Capture Your <span>Beautiful Moments</span></h2>
-<p>Premium Wedding Photography & Films</p>
-</div>
-</section>
+<h1>
+We Capture Your <span>Dream Moments</span>
+</h1>
 
+<a href="https://wa.me/919334005944">
+<button>BOOK NOW</button>
+</a>
 
-<section class="services">
-
-<h1>Our Services</h1>
-
-<div class="card">
-<h2>Wedding Shoot</h2>
-<p>Cinematic wedding memories</p>
-</div>
-
-<div class="card">
-<h2>Pre Wedding</h2>
-<p>Creative couple stories</p>
-</div>
-
-<div class="card">
-<h2>Photography</h2>
-<p>Professional photoshoot</p>
 </div>
 
 </section>
+
+
+
+<h1 style="text-align:center;color:#d4af37">
+Our Services
+</h1>
+
+
+<div class="box">
+
+<div class="card">
+<h2>💍 Wedding Shoot</h2>
+<p>Premium cinematic wedding film</p>
+</div>
+
+
+<div class="card">
+<h2>❤️ Pre Wedding</h2>
+<p>Creative couple story</p>
+</div>
+
+
+<div class="card">
+<h2>📸 Photography</h2>
+<p>Beautiful memories forever</p>
+</div>
+
+</div>
 
 
 <footer>
+
 Sai Baba Videography<br>
-Dhanbad, Barwadda
+📍 Dhanbad, Barwadda<br>
+📞 9334005944
+
 </footer>
 
 
