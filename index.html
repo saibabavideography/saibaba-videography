@@ -100,3 +100,163 @@ Book Now
 
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sai Baba Videography</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial, sans-serif;
+}
+
+body{
+ background:#0b0b0b;
+ color:white;
+}
+
+/* Logo Animation */
+.logo{
+ text-align:center;
+ margin-top:40px;
+ animation:zoom 2s infinite alternate;
+}
+
+.logo h1{
+ color:#d4af37;
+ font-size:45px;
+ letter-spacing:3px;
+}
+
+.logo p{
+ color:white;
+ font-size:18px;
+}
+
+@keyframes zoom{
+ from{
+ transform:scale(1);
+ }
+ to{
+ transform:scale(1.08);
+ }
+}
+
+
+/* Hero */
+.hero{
+ height:80vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ background:
+ linear-gradient(#0008,#0008),
+ url("your-photo.jpg");
+ background-size:cover;
+ background-position:center;
+}
+
+.hero h2{
+ font-size:45px;
+ animation:slide 2s;
+}
+
+.hero span{
+ color:#d4af37;
+}
+
+@keyframes slide{
+ from{
+ opacity:0;
+ transform:translateY(50px);
+ }
+ to{
+ opacity:1;
+ transform:translateY(0);
+ }
+}
+
+
+/* Cards */
+.services{
+ padding:40px;
+ text-align:center;
+}
+
+.card{
+ display:inline-block;
+ width:250px;
+ margin:15px;
+ padding:25px;
+ background:#161616;
+ border:1px solid #d4af37;
+ border-radius:15px;
+ transition:.5s;
+}
+
+.card:hover{
+ transform:translateY(-15px);
+ box-shadow:0 0 25px #d4af37;
+}
+
+
+footer{
+ text-align:center;
+ padding:20px;
+ color:#d4af37;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div class="logo">
+<h1>SAI BABA</h1>
+<p>Wedding & Cinematic Videography</p>
+</div>
+
+
+<section class="hero">
+<div>
+<h2>We Capture Your <span>Beautiful Moments</span></h2>
+<p>Premium Wedding Photography & Films</p>
+</div>
+</section>
+
+
+<section class="services">
+
+<h1>Our Services</h1>
+
+<div class="card">
+<h2>Wedding Shoot</h2>
+<p>Cinematic wedding memories</p>
+</div>
+
+<div class="card">
+<h2>Pre Wedding</h2>
+<p>Creative couple stories</p>
+</div>
+
+<div class="card">
+<h2>Photography</h2>
+<p>Professional photoshoot</p>
+</div>
+
+</section>
+
+
+<footer>
+Sai Baba Videography<br>
+Dhanbad, Barwadda
+</footer>
+
+
+</body>
+</html>
